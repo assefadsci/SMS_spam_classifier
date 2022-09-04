@@ -1,0 +1,102 @@
+html { 
+    width: 100%; 
+    height:100%; 
+    overflow:hidden; 
+}
+body {
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+.header{
+	padding: 30px;
+	position: relative;
+	background: black;
+	background-size: 500% 500%;
+}
+
+.top_header {
+    margin-top: auto;
+    text-align:center;
+    color: red;
+    font: bold 25px/1 "Calibri", sans-serif;
+  }
+
+.login{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+.text{
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    border-radius: 1000px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: bold 20px/1 "Calibri", sans-serif;
+    font-size: 20px;
+  }
+
+.button:hover{
+    color: white;
+    border: 2px solid red;
+}
+
+.button:active{
+    box-shadow: 0 0;
+}
+
+
+footer{
+	position: absolute;
+	display: table-cell;
+	background: black;
+    bottom:0;
+    width:100%;
+    height:80px;
+    color: red;
+
+}
+
+.results{
+    text-align: center;
+    vertical-align: middle;
+
+}
+.spam {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    animation: blinker 1s linear infinite;
+
+}
+
+.ham {
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
