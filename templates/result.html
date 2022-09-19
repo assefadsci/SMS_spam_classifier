@@ -14,10 +14,10 @@
         <div class="results">
             {% if prediction==["spam"] %}
 				<h1 class='spam'>Be careful, this is a SPAM message! </h1>
-                <img class="image" src="{{ url_for('static', filename='spam.webp') }}" alt="SPAM image">
+                <img class="image" src="{{ url_for('static', filename='spam.jpg') }}" alt="SPAM image">
 			{% elif prediction==["ham"] %}
 				<h1 class='ham'>Yeeha, this is not a SPAM message</h1>
-                <img class="image" src="{{ url_for('static', filename='ham.webp') }}" alt="HAM Image">
+                <img class="image" src="{{ url_for('static', filename='ham.jpg') }}" alt="HAM Image">
 
 			{% endif %}
         </div>
